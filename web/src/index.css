@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: 247 249 251; /* #F7F9FB */
+  --color-glass: 255 255 255; /* used with opacity */
+  --color-primary: 31 111 255; /* #1F6FFF */
+  --color-text: 14 20 32; /* #0E1420 */
+  --color-muted: 94 106 122; /* #5E6A7A */
+  --color-success: 18 183 106; /* #12B76A */
+  --color-warn: 247 144 9; /* #F79009 */
+  --color-error: 217 45 32; /* #D92D20 */
+
+  --radius-lg: 20px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+
+  --shadow-soft: 0 8px 24px 0 color-mix(in oklab, black 12%, transparent);
+  --shadow-softer: 0 16px 40px 0 color-mix(in oklab, black 12%, transparent);
+}
+
+html, body, #root { height: 100%; }
+body { @apply min-h-screen bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))] antialiased; }
+
+/* Focus ring standardisiert */
+:where(button, a, input, select, textarea, [role="button"]):focus,
+:where(button, a, input, select, textarea, [role="button"]):focus-visible { @apply outline-none; }
+:where(button, a, input, select, textarea, [role="button"]):focus-visible { @apply ring-2 ring-[rgb(var(--color-primary))] ring-offset-2 ring-offset-[rgb(var(--color-bg))]; }
+
+/* Glass surface helper */
+.glass {
+  @apply backdrop-blur-lg bg-[rgb(var(--color-glass))]/70 border border-white/60 shadow-[var(--shadow-soft)] rounded-[var(--radius-lg)];
+}
+
+.container-max {
+  @apply max-w-6xl mx-auto px-4 md:px-6 lg:px-8;
+}

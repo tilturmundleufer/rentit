@@ -1,0 +1,13 @@
+
+> vite-react-typescript-starter@0.0.0 dev
+> vite --port 5173 --strictPort --host 127.0.0.1
+
+
+  VITE v7.1.2  ready in 629 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+  ➜  press h + enter to show help
+10:09:31 AM [vite] (client) hmr update /src/pages/Profile.tsx, /src/pages/Applications.tsx, /src/pages/ListingDetail.tsx, /src/pages/Viewings.tsx, /src/pages/Listings.tsx, /src/components/ui/Toast.tsx, /src/index.css
+10:09:52 AM [vite] (client) hmr update /src/pages/Listings.tsx, /src/index.css
+10:10:23 AM [vite] (client) hmr update /src/pages/ListingDetail.tsx, /src/index.css
+10:10:54 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
